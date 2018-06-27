@@ -1,0 +1,19 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "is an API that converts one currency to another and returns result in json format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnobi/Currency-Converter.git"
+  },
+  "author": "Hammed Noibi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnobi/Currency-Converter/issues"
+  },
+  "homepage": "https://github.com/hnobi/Currency-Converter#readme"
+}

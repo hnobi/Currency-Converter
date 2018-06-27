@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="loadCurrency();">
+  <header>
+    <h1>Currency-Converter</h1>
+    <p>converts one currency to another any time, any where</p>
+  </header>
+
+  <section>
+    <!-- Amount Input -->
+    <div id="amount">
+
+
+      <label for="">Amount</label>
+      <input type="text" value="1" placeholder="Enter amount" />
+    </div>
+
+    <!-- currency: from and to selection  -->
+    <div class="currency">
+
+      <!-- From start here -->
+      <div class="from-div">
+        <label for="">From</label>
+
+        <select id="from" class="selection">
+
+        </select>
+      </div>
+      <!-- From Ends here -->
+
+      <!-- To Start here -->
+      <div class="to-div">
+        <label for="">To</label>
+        <select id="to" class="selection">
+        </select>
+      </div>
+      <!-- To Ends here -->
+
+    </div>
+
+    <div class="result">
+      <span id="result-display"></span>
+    </div>
+    <div>
+      <button onclick="convertCurrency(10, 'USD', 'PHP')">Convert</button>
+    </div>
+
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
