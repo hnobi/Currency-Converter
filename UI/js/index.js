@@ -1,4 +1,8 @@
 
+/**
+ *func  loadCurrency()
+ *Returns an object from FreecurrencycoverterAPI and used as select option in html
+ */
 const loadCurrency = () => {
   let to = document.getElementById("to");
   let from = document.getElementById("from");
@@ -16,42 +20,6 @@ const loadCurrency = () => {
   })
 }
 
-
-
-/**
- *
- *convertCurrency function convert currency from one to another country currency
- * @param {num} amount
- * @param {string} fromCurrency
- * @param {string} toCurrency
- * return a number as success or error
- */
-
-// let convertCurrency = () => {
-//     let fromCurrency = document.getElementById("from").value;
-//     let toCurrency = document.getElementById("to").value;
-//     let amount = document.getElementById("amount").value;
-//     let result = document.getElementById("result-display");
-
-//     let query = fromCurrency + '_' + toCurrency;
-//     let url = 'https://www.currencyconverterapi.com/api/v5/convert?q=' + query + '&compact=ultra';
-//     fetch(url)
-//         .then((response) => {
-//             response.json()
-//         }).then((data) => {
-//             console.log(data)
-//             // let val = data[fromCurrency];
-//             let val = data[query].val;
-// if (val != undefined) {
-//                 let total = parseFloat(val) * parseFloat(amount);
-//                 result.innerHTML = total;
-//                 console.log(result);
-//             }
-
-//         })
-// }
-
-
 const myFunction = () => {
   let selectedFrom = document.getElementById("from").selectedIndex;
   let fromOption = document.getElementById("from").options;
@@ -65,6 +33,15 @@ const myFunction = () => {
 }
 
 
+/**
+ *
+ *convertCurrency function convert currency from one to another country currency
+ * @param {num} amount
+ * @param {string} fromCurrency
+ * @param {string} toCurrency
+ * return a number as success or error
+ */
+
 
 const convertCurrency = (amount, fromCurrency, toCurrency) => {
   fromCurrency = encodeURIComponent(fromCurrency);
@@ -77,12 +54,7 @@ const convertCurrency = (amount, fromCurrency, toCurrency) => {
       try {
         let val, total;
         const resultMount = document.getElementById('result-display');
-
-        // for (const [key, value] of Object.entries(data)) {
-        //   val = value;
-        // }
         val = data[query];
-
         if (val) {
           total = parseFloat(val) * parseFloat(amount);
         } else {
@@ -94,9 +66,7 @@ const convertCurrency = (amount, fromCurrency, toCurrency) => {
 
       } catch (error) {
         console.log(error);
-
       }
-
     })
     .catch(error => console.log(error));
 }

@@ -14,7 +14,7 @@ self.addEventListener('install', (event) => {
         caches.open(CACHE_VERSION)
             .then((cache) => {
                 console.log('Opened cache');
-                u
+
             })
     );
 });
@@ -34,10 +34,10 @@ self.addEventListener('activate', (e) => {
     return self.clients.claim();
 });
 
-self.addEventListener('fetch', function (e) {
+self.addEventListener('fetch', (e) => {
     console.log('[ServiceWorker] Fetch', e.request.url);
     e.respondWith(
-        caches.match(e.request).then(function (response) {
+        caches.match(e.request).then((response) => {
             return response || fetch(e.request);
         })
     );
