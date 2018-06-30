@@ -4,9 +4,8 @@
 }
 body{
     width:100%;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQszYL1AVG-J5ReMSndkSI48YGldwLSxLW2Pi16VAeoHypC9bTQ");
+    background-image: url("./../img/coin2.jpeg");
     background-repeat: no-repeat;
-    background-color: black;
     background-size: cover;
 
    
@@ -23,18 +22,24 @@ header h1{
     font-size: 48px;
     color:#fff;
 }
+header p{
+    font-size: 28px;
+    color:rgb(184, 142, 28);
+}
 section{
    border:rgba(1, 1, 22, 0.877) 2px solid;
     margin: 40px auto;
     width: 50%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 40px;
 }
+
 input{
-    width: 500px;
+    width: 100%;
     height: 40px;
 }
 .currency{
@@ -42,19 +47,17 @@ input{
     width:90%;
     height: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 20px;
 }
 button{
     width: 200px;
     height: 30px;
-    /* border: rgb(51, 87, 153) 1px solid; */
-    /* overflow: hidden; */
 	border-radius: 0;
     background-color: rgb(184, 142, 28);
     font-size: 18px;
     color: #FFFFFF;
-    /* padding: 20px; */
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
@@ -62,12 +65,46 @@ button{
 }
 
 .result{
-    margin-top: 50px;
-    width: 50%;
+    margin: 20px 30px ;
+    min-width: 50%;
     height: 50px;
     background-color:#fff;
-    color:white
 }
 
+#result-display{
+    height: 100%;
+text-align: center;
+font-size: 32px;
+    color:red;
+    padding:6px;
+}
+select {
+    width:100px;
+    height: 30px;
+}
+select:hover {
+    color:rgb(184, 142, 28);
+    }
 
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        section{
+            width: 80%;
+            margin:auto 0;
+        }
+        input{
+            width:100%;
+            margin: auto 0;
+        }
+        header{
+            height: 100px;
+        }
+        header h1{
+            font-size: 28px;
+        }
+        header p{
+            font-size: 18px;
+            color:rgb(184, 142, 28);
+        }
+    }
 

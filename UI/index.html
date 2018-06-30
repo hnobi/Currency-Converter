@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body onload="loadCurrency();">
@@ -21,7 +21,7 @@
 
 
       <label for="">Amount</label>
-      <input type="text" value="1" placeholder="Enter amount" />
+      <input type="text" value="1" placeholder="Enter amount" id="amount-value" />
     </div>
 
     <!-- currency: from and to selection  -->
@@ -46,17 +46,18 @@
       <!-- To Ends here -->
 
     </div>
-
     <div class="result">
-      <span id="result-display"></span>
+      <div id="result-display"></div>
     </div>
     <div>
-      <button onclick="convertCurrency(10, 'USD', 'PHP')">Convert</button>
+      <button onclick="myFunction()">Convert</button>
     </div>
 
   </section>
 
-  <script src="index.js"></script>
+  <script src="./js/index.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 
 </html>
