@@ -1,7 +1,6 @@
 let CACHE_VERSION = 'app-v1';
 let cacheName = [
     './UI/',
-    '/UI/index.html',
     './UI/css/main.css',
     './UI/js/index.js',
     './UI//img/coin2.jpeg',
