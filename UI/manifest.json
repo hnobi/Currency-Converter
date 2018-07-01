@@ -1,0 +1,33 @@
+{
+   "name": "Currency converter Progressive Web App",
+   "short_name": "Cc",
+   "start_url": "./",
+   "theme_color": "#008080",
+   "background_color": "#008B8B",
+   "display": "standalone",
+   "description": "Cc App allow you to convert from any Currency to another",
+   "icons": [
+    {
+           "src": "UI/img/icons/16.png",
+           "sizes": "16x16",
+           "type": "image/png"
+       },
+       {
+           "src": "UI/img/icons/64.png",
+           "sizes": "64x64",
+           "type": "image/png"
+       },
+       {
+            "src": "UI/img/icons/114.png",
+            "sizes": "114x114",
+            "type": "image/png"
+        }
+      
+       {
+            "src":  "UI/img/icons/120.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }        
+   ]
+
+}
