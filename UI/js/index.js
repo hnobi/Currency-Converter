@@ -15,9 +15,9 @@ const loadCurrency = () => {
       to.innerHTML = options;
       from.innerHTML = options;
       console.log(options);
-      savecreatedDb();
     })
   })
+  savecreatedDb();
 }
 
 const myFunction = () => {
